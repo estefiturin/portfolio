@@ -1,0 +1,387 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    color: #b3b9c5;
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-family: 'Nunito', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  h3 {
+    color: #ff2562;
+    margin-bottom: 1em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: #ff2562;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  img {
+    max-height: 250px;
+    border: 1px solid #ff2562;
+  }
+  
+  header, main, footer {
+    margin-left: 5em;
+    padding: 0 4em;
+    width: calc(100% - 5em);
+  }
+  
+  /* Aside */
+  
+  aside {
+    position: fixed;
+    top: 0;
+    width: 5em;
+    height: 100vh;
+    background: #fffcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  aside .aside-links {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  aside .aside-links a {
+    color: #b3b9c5;
+  }
+  
+  aside .aside-links a:hover,
+  aside .aside-links a:active {
+    color: #ff2562;
+  }
+  
+  /* Header */
+  
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background: #ffeeee;
+  }
+  
+  header .logo {
+    flex: 1 1 50%;
+  }
+  
+  header .logo a {
+    display: inline-block;
+    height: 100%;
+    background: #8a3d3d;
+    padding: 0.5em 1em;
+    border-top: 3px solid #ff2562;
+    color: whitesmoke;
+  }
+  
+  header nav {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+    font-weight: 700;
+  }
+  
+  /* Main */
+  
+  main {
+    margin-top: 4.75em;
+    margin-bottom: 4.75em;
+  }
+  
+  section {
+    margin: 2em 0;
+    padding: 4em 0;
+  }
+  
+  #banner div p {
+      color:black;
+    width: 50%;
+    font-size: 1.2em;
+  }
+  
+  #banner div h1 {
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    padding: 0.05em 0;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about-me .info {
+    flex:  1 1 50%;
+    color:black;
+  }
+  
+  .about-me .image {
+    flex:  1 1 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skill-section {
+    flex: 1 1 32%;
+    max-width: 32%;
+    padding: 2em;
+    margin-bottom: 1.5em;
+    color: rgb(0, 0, 0);
+    background: #ffe9e9;
+  }
+  
+  .skill-section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  
+  .card {
+    position: relative;
+    flex: 1 1 32%;
+    max-width: 32%;
+    margin-bottom: 1.5em;
+    color: rgb(0, 0, 0);
+    background: #ffd6d6;
+  }
+  
+  .card-content {
+    padding: 2em 2em 10em;
+  }
+  
+  .card p {
+    margin: 0 0 2em;
+  }
+  
+  .card-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .card-details-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2em;
+    padding: 2em 0;
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+  
+  .technologies {
+    color: #000000;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+  
+  .technologies ul, .see-more {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .technologies ul li {
+    margin-right: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  
+  .see-more a {
+    margin-right: 1em;
+  }
+  
+  .button {
+    display: block;
+    border: 1px solid #ff2562;
+    padding: 0.5em 1em;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+  }
+  
+  .button:hover,
+  .button:focus {
+    background: #ff2562;
+  }
+  
+  .view-more {
+    display: inline-block;
+  }
+  
+  .contact-message {
+    margin-bottom: 1em;
+  }
+  
+  .contact-links ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links ul li {
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+  
+  /* Footer */
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    padding: 0.5em 4em;
+    display: flex;
+    align-items: center;
+    background: #ffe1e1;
+  }
+  
+  footer a {
+    color: #000000;
+  }
+  
+  footer a:hover,
+  footer a:active {
+    color: #ff2562;
+  }
+  
+  /* Media Queries */
+  
+  /* Large Screens */
+  
+  @media only screen and (min-width: 1600px) {
+    header, main, footer {
+      margin-left: 10rem;
+      padding: 0 7em;
+      width: calc(100% - 10rem);
+      font-size: 2rem;
+    }
+  
+    aside {
+      width: 10rem;
+    }
+  
+    header .logo a {
+      border-top: 7px solid #ff2562;
+    }
+  
+    img {
+      min-height: 400px;
+    }
+  
+    footer {
+      padding: 0.5em 7em;
+    }
+  }
+  
+  /* Tablets */
+  
+  @media only screen and (max-width: 768px) {
+    header, main, footer {
+      margin-left: 4rem;
+      padding: 0 3em;
+      width: calc(100% - 4rem);
+    }
+  
+    aside {
+      width: 4rem;
+    }
+  
+    #banner div p {
+      width: 80%;
+    }
+  
+    .about-me {
+      flex-direction: column;
+    }
+  
+    .about-me .image {
+      justify-content: flex-start;
+      margin-top: 1rem;
+    }
+  
+    img {
+      width: 38vw;
+    }
+  
+    .skill-section, .card {
+      min-width: 38vw;
+    }
+  
+    footer {
+      padding: 0.5em 3em;
+    }
+  }
+  
+  /* Mobile Phones */
+  
+  @media only screen and (max-width: 480px) {
+    header, main, footer {
+      margin-left: 0;
+      padding: 0 2em;
+      width: 100%;
+    }
+  
+    aside, header nav {
+      display: none;
+    }
+  
+    #banner div p {
+      width: 100%;
+    }
+  
+    .about-me {
+      flex-direction: column;
+    }
+  
+    .about-me .image {
+      justify-content: flex-start;
+      margin-top: 1rem;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .skill-section, .card {
+      min-width: 100%;
+    }
+  
+    footer {
+      padding: 0.5em 2em;
+    }
+  }
